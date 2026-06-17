@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>CONTACT PAGE</H1>
+    {% include 'menu.html' %}
+   <form action="/contactprocess/" method="post">   
+    {% csrf_token %}
+
+    N1 = <input type="number" name="n1" min="1" max="100" required autocomplete="off">
+    N2 = <input type="number" name="n2" min="1" max="100" required autocomplete="off">
+
+    <input type="submit">
+</form>
+</body>
+</html>

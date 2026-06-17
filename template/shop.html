@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <style>
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: bisque;
+          
+            border: 1px solid black;
+            padding: 20px;
+            width: 210px;
+            height: 350px;
+            border-radius: 20px;
+        }
+         .product:hover{
+           box-shadow: 10px 10px 10px gray;
+        }
+         .btn{
+            background-color: wheat;
+            color: black;
+            border-radius: 10px;
+            width: 200px;
+            height: 25px;
+            border: 1px solid blue;
+
+         }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .btn:hover {
+            background-color: blue;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shop</h1>
+
+    
+    <div class="main">
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'img.png' %}" alt="Product">
+
+            <h3>Yo Yo</h3>
+            <h3>$500000000</h3>
+
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
