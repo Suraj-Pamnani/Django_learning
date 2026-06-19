@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addstudentprocess/" method="post">
+        {% csrf_token %}
+        name = <input type="text" name="txt1">
+        mobile = <input type="number" maxlength="10" name="txt2">
+        email = <input type="email" name="txt3">
+        address = <input type="text" name="txt4">
+        <input type="submit">
+    </form>
+</body>
+</html>

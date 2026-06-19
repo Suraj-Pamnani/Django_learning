@@ -16,5 +16,14 @@
 
     <input type="submit">
 </form>
+<form action="/mailprocess" method="post">
+        {% csrf_token %}
+
+    to = <input type="text" name="txt10">
+    subject = <input type="text" name="txt10">
+  
+
+    <input type="submit">
+</form>
 </body>
 </html>

@@ -20,4 +20,10 @@ urlpatterns = [
     path('dashboard/', views.dashboard),
     path('logout/', views.logout),
 
+    path('maildemo/',views.mailsenddemo),
+    path('addstudentForm/',views.addstudentform),
+    path('addstudentprocess/',views.addstudentprocess),
+    path('display-student/',views.displayStudent),
+    path('delete-student/<int:id>',views.deleteStudent), 
+
 ]
